@@ -1,4 +1,3 @@
 <resources>
-    <string name="app_name">未完成的APP</string>
-    <string name="title_activity_temp_add">tempAddActivity</string>
+    <string name="app_name">备忘录ava</string>
 </resources>
