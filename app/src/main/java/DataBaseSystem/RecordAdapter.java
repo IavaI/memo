@@ -31,9 +31,9 @@ public class RecordAdapter extends ArrayAdapter<Record> {
             convertView = inflater.inflate(R.layout.activity_main, parent, false);
         }
         //TODO:id等待修改为对应文本框id
-        TextView title = convertView.findViewById(R.id.txt_id);
-        TextView context = convertView.findViewById(R.id.txt_id);
-        TextView time = convertView.findViewById(R.id.txt_id);
+        TextView title = convertView.findViewById(R.id.main);
+        TextView context = convertView.findViewById(R.id.main);
+        TextView time = convertView.findViewById(R.id.main);
 
         Record record = records.get(position);
         title.setText(record.getTitle());
