@@ -13,8 +13,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.contact.MainActivity;
-
 import com.example.contact.R;
 
 public class RegisterActivity extends AppCompatActivity {
