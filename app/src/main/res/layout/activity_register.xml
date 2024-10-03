@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    android:gravity="center_vertical|center_horizontal"-->
+<LinearLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#023659"
+    android:orientation="vertical"
+    android:paddingBottom="60dp"
+    android:paddingRight="60dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <Button
+        android:id="@+id/button_back"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:background="#673AB7"
+        android:text="back"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="128dp"
+        android:layout_marginBottom="20dp"
+        android:text="用户注册"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/register_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@."
+        android:ems="10"
+        android:hint="请输入账号"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/register_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="请输入密码(仅支持英文字符和数字)"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@."
+        android:textColor="#FFFFFF"
+        android:textColorHint="@android:color/white" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="性别："
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/register_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="60dp"
+            android:text="男"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/register_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="请输入您的昵称"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@android:color/white" />
+
+
+    <EditText
+        android:id="@+id/register_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="请输入您的联系方式(仅数字)"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@android:color/white" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_width="270dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        android:background="@drawable/button_style"-->
+<!--        android:foreground="?selectableItemBackground"-->
+<!--        android:text="安全登录" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button2"-->
+<!--        android:layout_width="270dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/button_style"-->
+<!--        android:foreground="?selectableItemBackground"-->
+<!--        android:text="账号注册" />-->
+
+
+</LinearLayout>
