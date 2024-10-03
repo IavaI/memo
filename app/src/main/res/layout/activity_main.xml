@@ -16,51 +16,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:background="@drawable/background_mainscreen"
+    android:gravity="center_vertical|center_horizontal"
     android:orientation="vertical"
-    android:background="drawable/background_mainscreen"
+    android:padding="60dp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent">
 
 
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="415dp"
         android:layout_height="wrap_content"
-        android:text="备忘录" />
+        android:layout_marginBottom="20dp"
+        android:text="备忘录"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@."
         android:ems="10"
         android:hint="请输入账号"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@android:color/white" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="30dp"
+        android:textColor="#FFFFFF"
         android:ems="10"
         android:hint="请输入密码"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/white" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_style"
+        android:foreground="?selectableItemBackground"
         android:text="安全登录" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="match_parent"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:foreground="?selectableItemBackground"
         android:text="账号注册" />
-
-
-
-
 
 
 </LinearLayout>
