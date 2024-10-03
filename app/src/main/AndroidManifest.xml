@@ -13,6 +13,11 @@
         android:theme="@style/Theme.Contact"
         tools:targetApi="31">
         <activity
+            android:name="DataBaseSystem.tempAddActivity"
+            android:exported="false"
+            android:label="@string/title_activity_temp_add"
+            android:theme="@style/Theme.Contact" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
