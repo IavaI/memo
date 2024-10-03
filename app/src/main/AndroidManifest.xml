@@ -18,7 +18,7 @@
             android:label="@string/title_activity_temp_add"
             android:theme="@style/Theme.Contact" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
