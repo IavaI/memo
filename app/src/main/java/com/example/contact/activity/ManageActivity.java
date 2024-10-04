@@ -1,5 +1,6 @@
 package com.example.contact.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,12 +37,28 @@ public class ManageActivity extends AppCompatActivity {
 
         // 设置NavigationView点击监听器
         navigationView.setNavigationItemSelectedListener(item -> {
-            switch (item.getItemId()) {
-                // 添加不同菜单项的处理
+            String itemId = item.getTitle().toString();
+            switch (itemId) {
+                case "个人信息":
+                    // 处理个人信息
+                    break;
+                case "修改密码":
+                    // 跳转到修改密码界面
+                    Intent intent = new Intent(ManageActivity.this, ChangePasswordActivity.class);
+                    startActivity(intent);
+                    drawerLayout.closeDrawer(GravityCompat.START);
+                    return true;
+                case "没想好啥功能":
+                    // 处理没想好啥功能
+                    break;
+                case "注销":
+                    // 处理注销
+                    break;
             }
             drawerLayout.closeDrawer(GravityCompat.START);
             return true;
         });
+
     }
 
     @Override
