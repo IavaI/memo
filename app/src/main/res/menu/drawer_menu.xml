@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_11"
+        android:title="个人信息"
+        android:background="#FFFFFF"
+        android:icon="@drawable/dui"/>
+    <item
+        android:id="@+id/menu_12"
+        android:title="修改密码"
+        android:icon="@drawable/key"/>
+    <item
+        android:id="@+id/menu_13"
+        android:title="没想好啥功能"
+        android:icon="@drawable/ljt"/>
+    <item
+        android:id="@+id/menu_14"
+        android:title="注销"
+        android:icon="@drawable/exit"/>
+
+
+
+
+
+</menu>
